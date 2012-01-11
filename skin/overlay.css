@@ -1,0 +1,46 @@
+
+#tbi_1,#tbi_2,#tbi_3,#tbi_4, #tbi_5
+{
+overflow: hidden;
+max-width: 180px;
+}
+
+
+#tbi_about
+{
+
+  list-style-image: url("chrome://goalcopy/skin/luna.png");
+  -moz-box-orient: horizontal;
+}
+
+#b_goalcopy_s1,#b_goalcopy_s2,#b_goalcopy_s3,#b_goalcopy_s4,#b_goalcopy_s5
+{
+  list-style-image: url("chrome://goalcopy/skin/save.png");
+  -moz-box-orient: horizontal;
+}
+
+[iconsize="small"] #b_goalcopy_s1,#b_goalcopy_s2,#b_goalcopy_s3,#b_goalcopy_s4,#b_goalcopy_s5
+{
+list-style-image: url("chrome://goalcopy/skin/save.png");
+-moz-box-orient: horizontal;
+}
+
+#b_goalcopy_l1,#b_goalcopy_l2,#b_goalcopy_l3,#b_goalcopy_l4,#b_goalcopy_l5,#b_pasteall
+{
+  list-style-image: url("chrome://goalcopy/skin/paste.png");
+-moz-box-orient: horizontal;
+}
+
+[iconsize="small"] #b_goalcopy_l1,#b_goalcopy_l2,#b_goalcopy_l3,#b_goalcopy_l4,#b_goalcopy_l5
+{
+ -moz-box-orient: horizontal;
+}
+#gcfind1, #gcfind2, #gcfind3, #gcreplace1, #gcreplace2, #gcreplace3
+{
+
+}
+#gcfind1, #gcreplace1
+{
+
+}
+#gcfindreplacetoolbar {display: none;}

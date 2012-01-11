@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://goalcopy/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://goalcopy/locale/goalcopy.dtd">
+<overlay id="goalcopy-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="overlay.js"/>
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="goalcopy-strings" src="chrome://goalcopy/locale/goalcopy.properties"/>
+  </stringbundleset>
+
+	<toolbox id="navigator-toolbox">
+		<toolbar id="goalcopy_toolbar" toolbarname="GA Goal Copy">
+			<toolbarseparator />
+			<toolbarbutton label="1. Copy" id="b_goalcopy_s1" oncommand="doGCSave(1);" />
+			<toolbaritem id="tbi_1"><toolbarbutton  label="Empty" id="b_goalcopy_l1" oncommand="doGCLoad(1);" /></toolbaritem>
+			<toolbarseparator />
+			<toolbarbutton  label="2. Copy" id="b_goalcopy_s2" oncommand="doGCSave(2);" />
+			<toolbaritem id="tbi_2"><toolbarbutton label="Empty" id="b_goalcopy_l2" oncommand="doGCLoad(2);" /></toolbaritem>
+			<toolbarseparator />
+			<toolbarbutton  label="3. Copy" id="b_goalcopy_s3" oncommand="doGCSave(3);" />
+			<toolbaritem id="tbi_3"><toolbarbutton  label="Empty" id="b_goalcopy_l3" oncommand="doGCLoad(3);" /></toolbaritem>
+			<toolbarseparator />
+			<toolbarbutton  label="4. Copy" id="b_goalcopy_s4" oncommand="doGCSave(4);" />
+			<toolbaritem id="tbi_4"><toolbarbutton label="Empty" id="b_goalcopy_l4" oncommand="doGCLoad(4);" /></toolbaritem>
+			<toolbarseparator />
+      <!-- <toolbaritem id="tbi_pasteall"><toolbarbutton id="b_pasteall" label="Paste All" onclick="doPasteAll();"/></toolbaritem> -->
+      <toolbarbutton  label="5. Copy" id="b_goalcopy_s5" oncommand="doGCSave(5);" />
+			<toolbaritem id="tbi_5"><toolbarbutton label="Empty" id="b_goalcopy_l5" oncommand="doGCLoad(5);" /></toolbaritem>
+
+      <toolbarseparator />
+      
+      
+      <toolbarbutton id="cleargoals" type="menu" tooltiptext="Clear a Goal" label="Clear">
+        <menupopup>
+          <menuitem label="Clear 1" oncommand="doClear(1);" />
+          <menuseparator />
+          <menuitem label="Clear 2" oncommand="doClear(2);" />
+          <menuseparator />
+          <menuitem label="Clear 3" oncommand="doClear(3);" />
+          <menuseparator />
+          <menuitem label="Clear 4" oncommand="doClear(4);" />
+          <menuseparator />
+          <menuitem label="Clear 5" oncommand="doClear(5);" />
+          <menuseparator />
+          <!-- <menuitem id="m_goalcopy_autosave" label="Turn On Goal Autosave" oncommand="doAutosave();" /> -->
+        </menupopup>
+      </toolbarbutton>
+
+
+      <toolbarseparator />
+			<toolbaritem id="tbi_about"><toolbarbutton id="b_about" label="About" onclick="doAbout();"/></toolbaritem>
+		</toolbar>
+
+    <toolbar id="gcfindreplacetoolbar_gaac" toolbarname="GA Goal Copy Find Replace">
+
+      <toolbarseparator /> 
+      <label id="gcfind1" control="f_find1" value="Find" />
+      <textbox id="f_find1" label="Find" size="16" />
+      <label id="gcreplace1" control="f_replace1" value="Replace" />
+      <textbox id="f_replace1" label="Replace" size="16" />
+      <toolbarseparator /> <toolbarseparator />
+      
+      <label id="gcfind2" control="f_find2" value="Find" />
+      <textbox id="f_find2" size="16" />
+      <label id="gcreplace2" control="f_replace2" value="Replace" />
+      <textbox id="f_replace2" size="16" />
+      <toolbarseparator /><toolbarseparator />
+      
+      <label id="gcfind3" control="f_find3" value="Find" />
+      <textbox id="f_find3" label="Find" size="16" />
+      <label id="gcreplace3" control="f_replace3" value="Replace" />
+      <textbox id="f_replace3" label="Replace" size="16" />
+      <toolbarseparator /><toolbarseparator />
+      
+      <toolbarbutton label="Clear" id="b_goalcopy_c1" oncommand="doFindReplaceClear(1);" />
+      
+    </toolbar>
+
+	</toolbox>
+
+
+
+
+  
+</overlay>

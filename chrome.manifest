@@ -1,0 +1,5 @@
+content	goalcopy	content/
+locale	goalcopy	en-US	locale/en-US/
+skin	goalcopy	classic/1.0	skin/
+overlay	chrome://browser/content/browser.xul	chrome://goalcopy/content/firefoxOverlay.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://goalcopy/skin/overlay.css
